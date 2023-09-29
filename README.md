@@ -1,7 +1,9 @@
 # Handle-counter
   App that counts pieces on frame in real time for galvanic line using Tensorflow object detection
-This is my portfolio project, so it likely won't have much use other than to show it in resume
+
+This is my portfolio project, so it likely won't have much use other than to show it in resume.
 and it designed specificaly for needs of factory i worked on. the main condition of success was high precision no less than 99%
+  
   Work on project includes:
   - gathering and labeling dataset
   - choosing detection model and tuning config
@@ -14,11 +16,11 @@ and it designed specificaly for needs of factory i worked on. the main condition
 the project contains two scripts: 
 ________________________________________________________________________________________________________________________
   main.py is an app, which takes a direct video stream from camera and, on button click, performs object detection, 
-visualising results and writing number of found objects in text format. It uses model efficientdetd0, which i trained on local GPU
+visualising results and writing number of found objects in text format. It uses model efficientdetd0, which i trained on local GPU.
 Due to the fact, that all images in dataset are frames from one camera, it will perform poorly in any other instance
   
   EfficientdetD0 can only process images of resolution 512x512 and camera provides much higher resolution. So in order to not lose that information, 
-app splits input image into 3 parts (that is because there are most commonly 3 frames on the line) and processes them separately, this technique greatly increases performance 
+app splits input image into 3 parts (that is because there are most commonly 3 frames on the line) and processes them separately, this technique greatly increases performance.
   
   By technical reasons, camera located slightly above frame and not perpendiculary to it, so I implemented Affine transformations in order to make shot more orthogonal,
 that also improved accuracy of detection
