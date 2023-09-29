@@ -1,7 +1,7 @@
 # Handle-counter
   App that counts pieces on frame in real time for galvanic line using Tensorflow object detection
 
-This is my portfolio project, so it likely won't have much use other than to show it in resume.
+  This is my portfolio project, so it likely won't have much use other than to show it in resume.
 and it designed specificaly for needs of factory i worked on. the main condition of success was high precision no less than 99%
   
   Work on project includes:
